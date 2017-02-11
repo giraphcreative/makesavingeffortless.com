@@ -16,20 +16,24 @@
 			<img src="img/header.png" class="header">
 		</header>
 		
-		<div class="wrap">
-			
+		<div class="wrap">	
 
 			<div class="tool group">
 
-				<h4 class="intro pad">Tell us about your loans and we’ll show you how much you can save to afford your life!</h4>
+				<div class="intro group">
+					<div class="savings-thermometer" data-giraph-api-key="b1897d5f9b0ac294fcd5ce7da30d8395"></div>
+					<script src="//giraph.io/api/thermometer/v1/js/widget.js"></script>
+					<p>Our goal is to save the residents of York County $500,000 in interest and fees this year, to show how effortless saving really can be.</p>
+					<p>Tell us a little bit about your loans, and we’ll help you save.</p>
+				</div>
 
 				<div class="loan-auto calculator bg-blue">
 					<div class="fourty">
 						<img src="img/rate-auto.png">
 					</div>
 					<div class="thirty">
-						<p><label for="amount">your balance</label><input type="text" placeholder="7,500" class="amount" /></p>
-						<p><label for="rate">your rate</label><input type="text" placeholder="8.99" class="rate percent" /></p>
+						<p><label for="amount">your balance</label><input type="text" placeholder="10,000" class="amount" /></p>
+						<p><label for="rate">your rate</label><input type="text" placeholder="5.99" class="rate percent" /></p>
 						<input type="hidden" class="rate_compare" value="1.99" />
 					</div>
 					<div class="thirty">
@@ -48,27 +52,38 @@
 					<div class="group"></div>
 				</div>
 
-				<div class="credit calculator bg-teal">
+				<div class="home calculator bg-green">
 					<div class="fourty">
-						<img src="img/rate-credit.png">
+						<img src="img/rate-home.png">
 					</div>
 					<div class="thirty">
-						<p><label for="amount">your balance</label><input type="text" placeholder="3,500" class="amount" /></p>
-						<p><label for="rate">your rate</label><input type="text" placeholder="14.5" class="rate percent" /></p>
-						<input type="hidden" class="term" value="12m" />
-						<input type="hidden" class="rate_compare" value="9.9" />
+						<p><label for="amount">your balance</label><input type="text" placeholder="20,000" class="amount" /></p>
+						<p><label for="rate">your rate</label><input type="text" placeholder="7.00" class="rate percent" /></p>
+						<input type="hidden" class="rate_compare" value="5" />
+					</div>
+					<div class="thirty">
+						<p><label for="term">your term</label>
+							<select class="term">
+								<option value="2y">2 yr</option>
+								<option value="3y">3 yr</option>
+								<option value="4y">4 yr</option>
+								<option value="5y">5 yr</option>
+								<option value="10y">10 yr</option>
+								<option value="15y">15 yr</option>
+							</select>
+						</p>
 					</div>
 					<div class="group"></div>
 				</div>
 				
-				<div class="loan-personal calculator bg-lime">
+				<div class="loan-personal calculator bg-teal">
 					<div class="fourty">
 						<img src="img/rate-personal.png">
 					</div>
 					<div class="thirty">
 						<p><label for="amount">your balance</label><input type="text" placeholder="7,500" class="amount" /></p>
 						<p><label for="rate">your rate</label><input type="text" placeholder="10.5" class="rate percent" /></p>
-						<input type="hidden" class="rate_compare" value="9.05" />
+						<input type="hidden" class="rate_compare" value="5.49" />
 					</div>
 					<div class="thirty">
 						<p><label for="term">your term</label>
@@ -84,7 +99,7 @@
 					<div class="group"></div>
 				</div>
 
-				<button class="calculate"><span>Show me</span> the savings!</button>
+				<button class="calculate"><span>Effortlessly</span> Save More</button>
 
 			</div>
 
@@ -93,7 +108,7 @@
 				<h2>Congratulations!</h2>
 				<p class="larger">You could save up to <strong>$<span class="result total"></span></strong>.</p>
 				<p>Save up to <strong>$<span class="result loan-auto"></span></strong> on your <strong>Auto Loan</strong>.</p>
-				<p>Save up to <strong>$<span class="result credit"></span></strong> on your <strong>Credit Card</strong>.</p>
+				<p>Save up to <strong>$<span class="result home"></span></strong> on your <strong>Home Equity Loan</strong>.</p>
 				<p>Save up to <strong>$<span class="result loan-personal"></span></strong> on your <strong>Personal Loan</strong>.</p>
 				<p>Additional savings may be possible! Contact us for details.</p>
 				<div class="text-center pad">
