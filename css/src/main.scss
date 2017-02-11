@@ -23,11 +23,9 @@ $lime: #CADD65;
 // background-container
 .container {
 	background: white;
-	padding-bottom: 40px;
-
-	@include respond-to( 1220px ) {
-		padding-bottom: 20px;
-	}
+	padding-bottom: 20px;
+	max-width: 1150px;
+	margin: 0 auto;
 }
 
 
@@ -195,52 +193,18 @@ input[type=submit], button, .btn {
 
 // footer styles
 .footer-bar {
-	background: $blue;
 	padding: 20px;
 	text-align: center;
-
-	&, a {
-		color: white;
-	}
-
-	h2, h3 {
-		@include font;
-	}
-
-	h2, a {
-		font-size: 2.4em;
-		line-height: 50px;
-		text-transform: uppercase;
-	}
-
-	h4 {
-		font-size: 17px;
-		@include respond-to( 800px ) { font-size: 26px; }
-	}
-
-	.sixty, .fourty {
-		text-align: center;
-	}
-
-	@include respond-to( 768px ) {
-		margin-top: 30px;
-	}
-
-	.half.separator {
-		@include respond-to( 768px ) {
-			width: 46.5%;
-		}
-	}
 }
 
 
 
 .fine-print {
-	background: white;
 	padding: 20px 0 0;
-	font-size: .85em;
+	font-size: .7em;
 	line-height: 1.3em;
 	text-align: left;
+	color: lighten( $grey, 30% );
 
 	img {
 		float: right;
